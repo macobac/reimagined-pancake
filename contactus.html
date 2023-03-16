@@ -64,52 +64,53 @@
             don’t hesitate to contact us.
           </p>
 
-          <div class="contactform">
-            <label for="name">Your Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Lola Burnham"
-              required
-            />
+            <div id="contactform" class="contactform">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Lola Burnham"
+                required
+              />
 
-            <label for="email">Your email address</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="lolaburnham@gmail.com"
-              required
-            />
+              <label for="email">Your email address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="lolaburnham@gmail.com"
+                required
+              />
 
-            <div class="wrapselect">
-              <label for="choose">Choose what fits best:</label>
-              <select name="choose" id="choose">
-                <option value="student">I'm a student</option>
-                <option value="researcher">I'm a researcher</option>
-                <option value="parent">I'm a parent</option>
-                <option value="volunteer">I want to be a volunteer</option>
-                <option value="support">
-                  I'm looking to support the museum
-                </option>
-                <option value="internship">
-                  I'm interested in an internship
-                </option>
-                <option value="none">None of the above</option>
-              </select>
+              <div class="wrapselect">
+                <label for="choose">Choose what fits best:</label>
+                <select name="choose" id="choose">
+                  <option value="student">I'm a student</option>
+                  <option value="researcher">I'm a researcher</option>
+                  <option value="parent">I'm a parent</option>
+                  <option value="volunteer">I want to be a volunteer</option>
+                  <option value="support">
+                    I'm looking to support the museum
+                  </option>
+                  <option value="internship">
+                    I'm interested in an internship
+                  </option>
+                  <option value="none">None of the above</option>
+                </select>
+              </div>
+              <label for="inquiry">Your inquiry</label>
+              <textarea
+                name="inquiry"
+                id="inquiry"
+                cols="30"
+                rows="10"
+                placeholder="Hi! I'd like to..."
+              ></textarea>
+
+              <input type="submit" value="Send" id="sendbtn" />
             </div>
-            <label for="inquiry">Your inquiry</label>
-            <textarea
-              name="inquiry"
-              id="inquiry"
-              cols="30"
-              rows="10"
-              placeholder="Hi! I'd like to..."
-            ></textarea>
 
-            <input type="submit" value="Send" />
-          </div>
         </main>
 
         <footer>
@@ -141,5 +142,6 @@
         </footer>
       </div>
     </div>
+    <script src="contactus.js"></script>
   </body>
 </html>
