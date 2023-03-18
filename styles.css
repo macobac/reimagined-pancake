@@ -462,12 +462,22 @@ textarea {
   margin-bottom: 15px;
 }
 
-input[type="submit"] {
+input[type="button"] {
   background-color: var(--boxblue);
   border-color: transparent;
   width: 100px;
   height: 30px;
   border-radius: 3px;
+}
+
+input[type="button"]:hover {
+  background-color: var(--csmblue);
+  transition: 0.7s;
+}
+
+input[type="button"]:active {
+  background-color: var(--boxgreen);
+  transition: 0.1s;
 }
 
 @media (min-width: 700px) {
