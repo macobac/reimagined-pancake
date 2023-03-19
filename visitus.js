@@ -1,9 +1,9 @@
 
-var emailEl = document.getElementById("email");
-var inqEl = document.getElementById("inquiry");
-var sendBtn = document.getElementById("admsend");
-var inputsArr = [emailEl, inqEl]
-var validEmail =
+const emailEl = document.getElementById("email");
+const inqEl = document.getElementById("inquiry");
+const sendBtn = document.getElementById("admsend");
+const inputsArr = [emailEl, inqEl]
+const validEmail =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 sendBtn.addEventListener("click", checkForm);

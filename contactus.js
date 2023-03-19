@@ -1,10 +1,10 @@
-var nameEl = document.getElementById("name");
-var emailEl = document.getElementById("email");
-var dropEl = document.getElementById("choose");
-var inqEl = document.getElementById("inquiry");
-var sendBtn = document.getElementById("sendbtn");
-var validEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-var inputsArr = [nameEl, emailEl, dropEl, inqEl]
+const nameEl = document.getElementById("name");
+const emailEl = document.getElementById("email");
+const dropEl = document.getElementById("choose");
+const inqEl = document.getElementById("inquiry");
+const sendBtn = document.getElementById("sendbtn");
+const validEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+const inputsArr = [nameEl, emailEl, dropEl, inqEl]
 
 sendBtn.addEventListener("click", checkForm);
 
