@@ -2,7 +2,7 @@
 const productsAPI = "http://museum.local/wp-json/wc/store/products";
 const cKey = "ck_cc425f48471600ede2440a3806a96202ef56bb12";
 const cSecret = "cs_ac9df972f37d6c360f556944d743e44fced33d0a";
-const prodDiv = document.querySelector("#shop-content");
+const prodDiv = document.querySelector("#product-content");
 
 
 // find a list of your website’s available routes on your API’s root at /wp-json
@@ -19,9 +19,9 @@ fetch(productsAPI, {
   .then(response => response.json())
   .then(products => {
     products.forEach(products =>
-      prodDiv.innerHTML = `
+      prodDiv.innerHTML += `
       <div class="left-wrap">
-        <div id="prod-img"></div>
+        <div id="prod-img">${products.images.src}</div>
       </div>
       <div class="right-wrap">
         <h2 id="prod-titel">${products.name}</h2>

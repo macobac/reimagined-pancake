@@ -53,7 +53,7 @@ nav {
   display: none;
 }
 
-#hamburger-menu:checked ~ nav {
+#hamburger-menu:checked~nav {
   display: block;
 }
 
@@ -482,6 +482,8 @@ input[type="button"]:active {
 /* (Shop) Main */
 
 
+
+
 @media (min-width: 700px) {
   /* Navigation */
 
@@ -507,7 +509,7 @@ input[type="button"]:active {
     display: none;
   }
 
-  #hamburger-menu:checked ~ nav {
+  #hamburger-menu:checked~nav {
     display: none;
   }
 
@@ -606,6 +608,16 @@ input[type="button"]:active {
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  /* (Shop) Main */
+
+  #product-content {
+    display: grid;
+  }
+
+  #product-content .right-wrap {
+    border: solid #167aca 20px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -614,6 +626,7 @@ input[type="button"]:active {
   nav {
     right: 100px;
   }
+
   .navmobile li {
     padding-left: 70px;
   }
