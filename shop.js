@@ -1,5 +1,5 @@
 //const mainAPI = "http://museum.local/wp-json";
-const productsAPI = "http://museum.local/wp-json/wc/store/products";
+const productsAPI = "https://museum.local/wp-json/wc/store/products";
 const cKey = "ck_cc425f48471600ede2440a3806a96202ef56bb12";
 const cSecret = "cs_ac9df972f37d6c360f556944d743e44fced33d0a";
 const prodDiv = document.querySelector("#product-content");
