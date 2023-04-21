@@ -21,12 +21,12 @@ fetch(productsAPI, {
     products.forEach(products =>
       prodDiv.innerHTML += `
       <div class="left-wrap">
-        <div id="prod-img">${products.images.src}</div>
+        <img src="${products.images[0].src}" alt="${products.images[0].alt}" id="prod-img">
       </div>
       <div class="right-wrap">
         <h2 id="prod-titel">${products.name}</h2>
-        <p id="prod-price">${products.prices.price / 100} kr</p>
         <p id="prod-desc">${products.description}</p>
+        <p id="prod-price">${products.prices.price/100} kr</p>
         <button id="add-to-cart">Add to cart</button>
       </div>
       `
@@ -37,4 +37,3 @@ fetch(productsAPI, {
     console.error('Error fetching products:', error);
   });
 
-  
