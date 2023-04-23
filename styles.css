@@ -508,7 +508,7 @@ input[type="button"]:active {
   max-width: 300px;
 }
 
-#add-to-cart {
+.add-to-cart {
   background-color: var(--boxblue);
   color: var(--csmblue);
   border: none;
