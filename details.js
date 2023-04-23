@@ -38,3 +38,9 @@ fetch(productsAPI, {
   .catch(error => {
     console.error('Error fetching product:', error);
   });
+
+
+const backBtn = document.querySelector(".go-back");
+backBtn.addEventListener("click", () => {
+  window.history.back();
+});

@@ -22,7 +22,7 @@ const prodDiv = document.querySelector("#product-content");
         <h2 id="prod-titel">${product.name}</h2>
         <p id="prod-desc">${product.description}</p>
         <p id="prod-price">${product.prices.price / 100} kr</p>
-        <button class="add-to-cart">Add to cart</button>
+        <button class="add-to-cart btn">Add to cart</button>
       </div>
       `;
     });
