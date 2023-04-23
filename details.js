@@ -17,7 +17,6 @@ fetch(productsAPI, {
   .then(products => {
     const product = products[prodIndex];
 
-    // Create HTML for product details
     const detailsDiv = document.getElementById('details-div');
     detailsDiv.innerHTML = `
       <div class="left-wrap">
@@ -27,11 +26,6 @@ fetch(productsAPI, {
         <h2 id="prod-titel">${product.name}</h2>
         <p id="prod-desc">${product.description}</p>
         <p id="prod-price">${product.prices.price/100} kr</p>
-        <p id="prod-sale-price">${product.prices.sale_price/100} kr</p>
-        <p id="prod-avg-rating">${product.average_rating}</p>
-        <p id="prod-review-count">${product.review_count}</p>
-        <p id="prod-categories">${product.categories.map(category => category.name).join(', ')}</p>
-        <p id="prod-in-stock">${product.stock_quantity}</p>
       </div>
     `;
   })

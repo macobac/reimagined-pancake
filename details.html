@@ -4,12 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product details</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="details-div"></div>
-    <button class="go-back btn">Go Back</button>
+    <div class="content-wrapper">
+        <div class="content-container">
+            <header>
+                <div class="leftheader">
+                    <a href="index.html">
+                        <img src="images/csm1logo.png" class="csm1logo"
+                            alt="Community Science Museum Primary Logo" /></a>
+                </div>
+                <div class="rightheader">
+                    <label for="hamburger-menu"><i class="fa-solid fa-bars"></i>
+                    </label>
+                    <input type="checkbox" id="hamburger-menu" />
+                    <nav>
+                        <ul class="navmobile">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="exhibitionspaces.html">Exhibition</a></li>
+                            <li><a href="visitus.html">Visit Us</a></li>
+                            <li><a href="getinvolved.html">Get Involved</a></li>
+                            <li><a href="contactus.html">Contact us</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <main class="getinvolved">
+
+                <div id="details-div"></div>
+                <button class="go-back btn">Go Back</button>
+            </main>
+
+            <footer>
+                <div class="footerwrapper">
+                    <img src="images/csm2logo.png" alt="Community Science Museum Secondary Logo" class="csm2logo" />
+                    <p>Explore together.</p>
+                    <p>256-579-7288</p>
+                </div>
+                <div class="footerwrapper">
+                    <h4>Visit</h4>
+                    <p>4574 Marcus Street</p>
+                    <p>Tallapoosa</p>
+                    <p>AL, 30176</p>
+                </div>
+                <div class="footerwrapper">
+                    <h4>Explore</h4>
+                    <p><a href="exhibitionspaces.html">Exhibition Spaces</a></p>
+                    <p><a href="getinvolved.html">Get Involved</a></p>
+                </div>
+                <div class="footerwrapper">
+                    <h4>Legal</h4>
+                    <p><a href="#">Terms</a></p>
+                    <p><a href="#">Privacy</a></p>
+                </div>
+            </footer>
+        </div>
+    </div>
     <script src="details.js"></script>
 </body>
 </html>

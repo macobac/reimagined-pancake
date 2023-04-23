@@ -36,3 +36,5 @@ const prodDiv = document.querySelector("#product-content");
   .catch(error => {
     console.error("Error fetching products:", error);
   });
+
+  
